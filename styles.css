@@ -1,0 +1,340 @@
+*{
+    font-family: durbank;
+}
+
+@font-face {
+    font-family: Durbank;
+    src: url(fonts/durbank.ttf);
+}
+
+body{
+    background-color: #9CC1D8;
+    margin-right: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+img{
+    max-width: 375px;
+}
+
+.container{
+    position: relative;
+    text-align: left;
+}
+
+#logohome{
+    position: absolute;
+    max-width: 375px;
+    margin-top:2em;
+}
+
+#logonaam{
+    position: absolute;
+    font-family: durbank;
+    color: white;
+    font-size: 3em;
+    padding-left: 15px;
+    padding-top: 50px;
+    float: left;
+}
+
+#quote{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-family: durbank;
+    max-width: 375px;
+    font-size: 18px;
+    font-weight: 100;
+    padding-top: 26em;
+    padding-bottom: 140px;
+}
+
+.navbar{
+    position: fixed;
+    bottom: 25px;
+    left: 37px;
+    width: 80%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 22px;
+    z-index: 3;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a.active{
+    text-decoration: underline;
+
+}
+
+.navimg{
+    position: fixed;
+    bottom: 10px;
+    left: 26px;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 0;
+    z-index: 2;
+}
+
+/*over pagina*/
+
+.anders{
+    width: 140px;
+    margin-top: 1em;
+    position: absolute;
+}
+
+#over{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 10px 13px;
+    margin: 10px 105px;
+    border: 2px solid;
+    border-radius: 30px;
+    border-color: black;
+    font-size: 3em;
+}
+
+hr{
+    border: none;
+    border-top: 1.5px solid black;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.start{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px 35px;
+    z-index: -1;
+}
+
+.left{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    align-items: start;
+    display: flex;
+    justify-content: left;
+    margin-top: 46px;
+    margin-right: 90px;
+    z-index: -1;
+    background-color: #A09682;
+    padding-right: 18px;
+    padding-left: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 20px solid transparent;
+    border-image-source: url(illustraties/border1.png);
+    border-image-slice: 8%;
+    border-image-repeat: round;
+    border-left: none;
+}
+
+.right{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    align-items: start;
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    margin-bottom: 10em;
+    margin-left: 90px;
+    z-index: -1;
+    background-color: #A09682;
+    padding-right: 10px;
+    padding-left: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 20px solid transparent;
+    border-image-source: url(illustraties/border1.png);
+    border-image-slice: 8%;
+    border-image-repeat: round;
+    border-right: none;
+}
+
+.tandwiel{
+    float: left;
+    width: 60px;
+    margin-top: 5em;
+    margin-left: 10px;
+}
+
+.tandwielkl{
+    float: left;
+    width: 45px;
+    margin-top: 8em;
+    margin-right: 5px;
+}
+
+/*werkzaamheden page*/
+
+.zon{
+    display: block;
+    position: relative;
+    width: 120px;
+    margin-bottom: 0;
+    margin-left: 11em;
+    z-index: -1;
+}
+
+#werk{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 10px 13px;
+    margin: 0px 40px;
+    border: 2px solid;
+    border-radius: 30px;
+    border-color: black;
+    font-size: 2.5em;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30pt;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 7px 100px;
+    margin-bottom: 20px;
+    z-index: -1;
+    animation: bounceZoom 1.5s ease-in-out infinite;
+}
+
+.button:active{
+    background-color: gray;
+}
+
+@keyframes bounceZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.onder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    margin: 40px 60px;
+    background-color: #A09682;
+    border-radius: 25px;
+    z-index: -1;
+    border: 5px double black;
+}
+
+.ruimteonder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    margin: 40px 60px;
+    background-color: #A09682;
+    border-radius: 25px;
+    z-index: -1;
+    margin-bottom: 10em;
+    border: 5px double black;
+}
+
+.background{
+    background-image: url(Images/zijkant.png);
+    max-width: 400px;
+    max-height: auto;
+}
+
+/*locatie pagina*/
+
+#Locatienaam{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 10px 15px;
+    margin: 10px 90px;
+    margin-bottom: 20px;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: black;
+    font-size: 3em;
+}
+
+button{
+    background: none;
+    border: none;
+    float: right;
+    margin-top: 3px;
+    margin-bottom: 10em;
+}
+
+.img1{
+    max-width: 365px;
+    margin-left: 5px;
+    border-radius: 10px;
+    opacity: 0; 
+    animation: zoomOut 1.5s ease-in forwards; 
+    z-index: -1;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.02); 
+        opacity: 1; 
+    }
+    to {
+        transform: scale(0.98); 
+        opacity: 1; 
+    }
+}
+
+.img2{
+    max-width: 365px;
+    margin-left: 5px;
+    border-radius: 10px;
+    opacity: 0; 
+    animation: zoomIn 1.5s ease-out forwards; 
+    z-index: -5;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.98); 
+        opacity: 1; 
+    }
+    to {
+        transform: scale(1.02); 
+        opacity: 1; 
+    }
+}
+
